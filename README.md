@@ -12,7 +12,24 @@ Welcome to my business and data analytics portfolio! Here you can find a selecti
 ## Projects
 
 ### Statistical Analysis to Determine the Effects of Covid-19 on Student Scores
+A project that I led analysis and visualization for in my Masters program
+- Goal: Find a measurable change (if any) in standardized test passing rates for Texas students before and after COVID-19.
+- Hypothesis: There will indeed be a measurable and statistically significant **decrease in students' passing rates because of COVID-19**. These decreases will be amplified across minority groups, and economically disadvantaged students.
+- **Data:** For this project, my team was given multiple extensive data sets concerning standardized test scores, totalling ~20 Million unique data points covering ALL SCHOOLS in Texas which representing ALL STUDENTS. The standardized test that is required across all students in Texas is the STAAR Test, and these datasets that we we given contained incredibly descriptive data reflecting the scores and passing rates for the entire population of Texan students. When combined, these datasets contained information on student performance by school, as well as demographic information about each school's students, and the school itself.
+
+**Results**
+
 ![JPG](https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/Statistical%20Analysis%20to%20Determine%20the%20Effects%20of%20Covid-19%20on%20Student%20Scores.jpg "JPG")
+
+- Visual Analysis
+  - Purely based on visual analysis, and on the diferences between passing rates before and after COVID-19, **there is a noticable decrease in student passing rates**
+    - For all students, Math section passing rates suffered substantially more than other subjects
+    - Passing rates for minorities seemed to suffer more
+    - Economically disadvantaged students also suffered significantly more than not economically disadvantaged students
+
+- Statistical Analysis
+  - Based on visual differences and difference between mean values, student passing rates suffered after COVID-19
+  - However, to conclude a true effect from COVID-19, statistical analysis is required
 
 
 ## Education
