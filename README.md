@@ -1,6 +1,6 @@
-# Kevin Matz - Analytics Portfolio
+# Kevin Matz - Analyst Portfolio
 
-Welcome to my data analytics portfolio! Here you can find a selection of my projects and experiences in data analysis, completed through my education and through various side porjects. Feel free to reach out if you have any questions about my work!
+Welcome to my business and data analytics portfolio! Here you can find a selection of my projects and experiences in a variety of analyses, completed through my education and through various side projects. Feel free to reach out if you have any questions about my work!
 
 ## About Me
 
