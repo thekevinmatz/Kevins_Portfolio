@@ -12,7 +12,7 @@ Welcome to my business and data analytics portfolio! Here you can find a selecti
 ## Projects
 
 ### Statistical Analysis to Determine the Effects of Covid-19 on Student Scores
-A project that I led analysis and visualization for in my Masters program
+A project from my Masters program where I led analysis and visualization. While the title states "...the Effects of Covid-19...", it does not necessarily mean the effects of the actual disease itself, but also the implications and results of Covid-19 policies, social trends, and overall public reaction, which may have negatively affected students.
 - Goal: Find a measurable change (if any) in standardized test passing rates for Texas students before and after COVID-19.
 - Hypothesis: There will indeed be a measurable and statistically significant **decrease in students' passing rates because of COVID-19**. These decreases will be amplified across minority groups, and economically disadvantaged students.
 - **Data:** For this project, my team was given multiple extensive data sets concerning standardized test scores, totalling ~20 Million unique data points covering ALL SCHOOLS in Texas which represents ALL STUDENTS. The standardized test that is required across all students in Texas is the STAAR Test, and these datasets we were given contained incredibly descriptive information reflecting the scores and passing rates for the entire population of Texan students. When combined, these datasets contained key information on student performance by school, as well as demographic information about each school's students and the school itself.
@@ -27,11 +27,13 @@ A project that I led analysis and visualization for in my Masters program
     - Passing rates for minorities seemed to suffer more
     - Economically disadvantaged students also suffered significantly more than not economically disadvantaged students
 
+<img width="932" alt="Statistical Significant Difference - COVID-19 DATA" src="https://user-images.githubusercontent.com/129996508/230223565-ec52ec87-20bf-4e37-9d0d-384bcd27fa25.png">
+
 - Statistical Analysis
   - Based on visual differences and difference between mean values, student passing rates suffered after COVID-19
   - However, to conclude a true effect from COVID-19, statistical analysis is required
-
-![JPG]
+  - In the image above, a statistically significant decrease in each of the 36 variables was recorded when measuring passing rates before and after COVID-19
+    - Each "YES" Represents the statistical significance at the 99% confidence level, for each of the 36 variables that were studied
 
 ## Education
 
