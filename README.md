@@ -11,7 +11,9 @@ Welcome to my business and data analytics portfolio! Here you can find a selecti
 
 ## Projects
 
-...coming soon
+### Statistical Analysis to Determine the Effects of Covid-19 on Student Scores
+
+
 
 ## Education
 
