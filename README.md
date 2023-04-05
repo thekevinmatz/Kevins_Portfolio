@@ -31,6 +31,7 @@ A project that I led analysis and visualization for in my Masters program
   - Based on visual differences and difference between mean values, student passing rates suffered after COVID-19
   - However, to conclude a true effect from COVID-19, statistical analysis is required
 
+![JPG]
 
 ## Education
 
