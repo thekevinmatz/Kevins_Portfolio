@@ -12,7 +12,7 @@ Welcome to my business and data analytics portfolio! Here you can find a selecti
 ## Projects
 
 ### Statistical Analysis to Determine the Effects of Covid-19 on Student Scores
-!(https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/Statistical%20Analysis%20to%20Determine%20the%20Effects%20of%20Covid-19%20on%20Student%20Scores.pdf)
+![PDF File](https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/Statistical%20Analysis%20to%20Determine%20the%20Effects%20of%20Covid-19%20on%20Student%20Scores.pdf "PDF File")
 
 
 ## Education
