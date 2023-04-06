@@ -64,6 +64,9 @@ A project from my Masters program where I led analysis and visualization. While 
 **Overall, the statistical findings overwhelmingly indicated that the pandemic had negative effects on all students and their passing rates for standardized tests**
 
 
+More coming soon...
+
+
 ## Education
 
 - Master of Science in Economics, Texas A&M University, May 2023
