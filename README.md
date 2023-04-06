@@ -34,6 +34,35 @@ A project from my Masters program where I led analysis and visualization. While 
   - However, to conclude a true effect from COVID-19, statistical analysis is required
   - In the image above, a statistically significant decrease in each of the 36 variables was recorded when measuring passing rates before and after COVID-19
     - Each "YES" Represents the statistical significance at the 99% confidence level, for each of the 36 variables that were studied
+  - t-Tests
+    - Lastly, we conducted Two-Sample t-Tests Assuming Equal variances comparing average pass rates in 2019 and 2021 for each subject and found that **the difference in mean passing rates for all students in each subject was statistically significant at the 99% level.**
+
+**Limitations**
+
+- While this analysis revealed some interesting differences from before and after Covid-19, there were some limitations to the study:
+  - First, there was some misssing data from certain schools
+    - Some schools had in-depth demographic missing
+    - A few schools had one or more subjects missing as well
+  - Second, the data year range could potentially over-exaggerate the results
+    - Because the data provided is only from the years before and after Covid-19, the large difference in passing rates could potentially be because the year after was one of the worst years for passing rates in general
+    - This would have to be solved by measuring data from years before and years after the pandemic, which we did not have access to
+  - Lastly, the average passing rate was determined by the passing rate for each school
+    - This is an issue because each school has a different amount of students, and some lower performaning, small schools would be measured the same as a higher performing, big school
+  - Overall, these discrepansies were likely minimal, in terms of affecting the overall results, as this large sample size would likely cover any potential misrepresentations of the data
+  
+**Conclusion**
+
+- Men and Women
+  - Women suffered worse in terms of passing rates as opposed to their male counterparts, even though they had higher scores overall
+- Ethnicities
+  - Hispanic students witnessed the highest decrease in their passing rates
+  - African American students witnessed the second highest reduction
+- Economically Disadvantaged Students
+  - Economically Disadvantaged students witnessed a significantly higher reduction in passing rates
+  - **Being economically disadvantaged could have nearly doubled your chance of failing** in the year after the pandemic
+  
+**Overall, the statistical findings overwhelmingly indicated that the pandemic had negative effects on all students and their passing rates for standardized tests**
+
 
 ## Education
 
@@ -57,7 +86,7 @@ A project from my Masters program where I led analysis and visualization. While 
 
 ## Certifications
 
-- Data Analysis with Python , Coursera, January 2023
+- Data Analysis with Python, Coursera, January 2023
 
 ## Contact Me
 
