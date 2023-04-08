@@ -63,7 +63,7 @@ A project from my Masters program where I led analysis and visualization. While 
   
 **Overall, the statistical findings overwhelmingly indicated that the pandemic had negative effects on all students and their passing rates for standardized tests**
 
-
+---
 
 ### The Effects of an Aging Population on GDP Growth Rate in the Developed World
 Another project from my Masters degree, where me and a group of colleagues saught to discover the effects of an aging population in the developed world, and whether or not it could lead to a decrease in future GDP growth.
