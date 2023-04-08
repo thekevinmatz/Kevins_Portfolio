@@ -64,6 +64,27 @@ A project from my Masters program where I led analysis and visualization. While 
 **Overall, the statistical findings overwhelmingly indicated that the pandemic had negative effects on all students and their passing rates for standardized tests**
 
 
+
+### The Effects of an Aging Population on GDP Growth Rate in the Developed World
+Another project from my Masters degree, where me and a group of colleagues saught to discover the effects of an aging population in the developed world, and whether or not it could lead to a decrease in future GDP growth.
+- Goal: To present a rational and data driven analysis to capture the effect an aging population has on the growth of a country’s per-capita economic output
+- H<sub>0</sub>: The change in the population of 65+ has a negative effect on GDP per-capita growth.
+- H<sub>1</sub>: The change in the population of 65+ has no effect on GDP per-capita growth.
+- Data:
+  - The World Bank’s “World Development Indicators” database 
+  - The St. Louis Federal Reserve Economic Database (FRED) 
+  - OECD Data 
+  - Population data from several of the census bureau's of developed countries (USA, Canada, Australia, New Zealand, Western Europe, Japan, and South Korea)
+
+**<a href="https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/The%20Effects%20of%20an%20Aging%20Population%20on%20GDP%20Growth%20Rate%20in%20the%20Developed%20World.pdf">PDF Presentation</a>**
+
+**Conclusion**
+
+- Because the variable for a nation’s aging population (65<sub>it</sub>) is negative and statistically significant at a 95% confidence interval for all of our regressions, we fail to reject the null hypothesis that the change in the population of 65+ has a negative effect on GDP per-capita growth. 
+- We can conclude that, in the scope of our model, **as a developed country’s population ages, they can expect to see a decline in their GDP Per Capita growth rate moving forward.**
+
+
+
 More coming soon...
 
 
