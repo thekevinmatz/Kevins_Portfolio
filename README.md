@@ -1,10 +1,10 @@
 # Kevin Matz - Analyst Portfolio
 
-Welcome to my business and data analytics portfolio! Here you can find a selection of my projects and experiences in a variety of analyses, completed through my education and through various side projects. Feel free to reach out if you have any questions about my work!
+Welcome to my data analytics portfolio! Here you can find a selection of my projects and experiences in a variety of analyses, completed through my education and through various side projects. Feel free to reach out if you have any questions about my work!
 
 ## About Me
 
-- 🔭 I'm currently finishing my Master of Science in Economics
+- 🔭 I just completed Master of Science in Economics
 - 🌱 I'm currently furthering my skills in SQL
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/kevin-matz/) | [Email](mailto:kevinmatz@tamu.edu)
 - ⚡ Fun fact: I'm an avid musician and guitar player!
