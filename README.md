@@ -15,8 +15,7 @@ Welcome to my data analytics portfolio! Here you can find a selection of my proj
 
 As a freelance data analyst and Excel specialist, I recently had the opportunity to create a comprehensive trading dashboard for a client. The project, designed to track and analyze trading data, demonstrates my ability to utilize complex Excel formulas and tools to deliver effective business solutions.
 
-I built this dashboard in Microsoft Excel, employing advanced functions such as INDEX, OFFSET, COUNTA, VLOOKUP, SUMIF, and dynamic array formulas. The interface provides a user-friendly layout, making it easy for the client to input and monitor their trade data, while the back-end seamlessly handles complex calculations and data management tasks.
-
+I built this dashboard in Microsoft Excel, employing advanced functions such as INDEX, OFFSET, COUNTA, VLOOKUP, SUMIF, and dynamic array formulas. The interface provides a user-friendly layout, making it easy for the client to input and monitor their trade data, while the back-end seamlessly handles complex calculations and data management tasks. 
 **Screenshot:**
 ![JPG](https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/Screenshot%202023-06-27%20at%202.09.29%20PM.png "JPG")
 
