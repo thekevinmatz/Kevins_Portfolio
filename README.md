@@ -17,6 +17,9 @@ As a freelance data analyst and Excel specialist, I recently had the opportunity
 
 I built this dashboard in Microsoft Excel, employing advanced functions such as INDEX, OFFSET, COUNTA, VLOOKUP, SUMIF, and dynamic array formulas. The interface provides a user-friendly layout, making it easy for the client to input and monitor their trade data, while the back-end seamlessly handles complex calculations and data management tasks.
 
+**Screenshot:**
+![JPG](https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/Screenshot%202023-06-27%20at%202.09.29%20PM.png "JPG")
+
 Key features of the dashboard include:
 
 **Data recording and analysis:** The 'Trade Data Recording' tab allows users to input each trade's details, while the 'Trade Analysis' tab generates a dynamic display of the most recent 20 trades (or 'batches') based on the recorded data.
