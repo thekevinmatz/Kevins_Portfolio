@@ -9,9 +9,20 @@ Welcome to my data analytics portfolio! Here you can find a selection of my proj
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/kevin-matz/) | [Email](mailto:kevinmatz@tamu.edu)
 - ⚡ Fun fact: I'm an avid musician and guitar player!
 
-## Projects
+# Projects
 
-### Excel-based Trading Dashboard Development for a Client
+To help you navigate through my portfolio, I have organized my projects by the software used. Please feel free to click on the links below to jump directly to the section that interests you the most!
+
+- [Most Recent Project](#most-recent-project)
+- [R Projects](#r-projects)
+- [Python Projects](#python-projects)
+- [Excel and Google SheetsProjects](#excel-and-google-sheets-projects)
+- [Statistical Analysis Presentations](#statistical-analysis-presentations)
+
+
+## Most Recent Project
+
+### Dynamic Financial Dashboard - Excel
 
 As a freelance data analyst and Excel specialist, I recently had the opportunity to create a comprehensive trading dashboard for a client. The project, designed to track and analyze trading data, demonstrates my ability to utilize complex Excel formulas and tools to deliver effective business solutions.
 
@@ -38,6 +49,14 @@ The provided screenshot is an example of the dashboard in use, with the numbers 
 With this project, I have showcased my abilities in data analysis, problem-solving, and Excel mastery, all crucial skills for a data analyst role. I strive to combine these skills with my strong understanding of business operations to deliver solutions that enhance decision-making and improve performance.
 
 *Please note: For privacy and security reasons, the actual dashboard has not been shared. The screenshot provided is a altered copy and does not contain real data or sensitive information.*
+
+## R Projects
+
+## Python Projects
+
+## Excel and Google Sheets Projects
+
+## Statistical Analysis Presentations
 
 ### Statistical Analysis to Determine the Effects of Covid-19 on Student Scores
 A project from my Masters program where I used **SAS and Excel** to lead analysis and visualization. While the title states "...the Effects of Covid-19...", it does not necessarily mean the effects of the actual disease itself, but also the implications and results of Covid-19 policies, social trends, and overall public reaction, which may have negatively affected students.
