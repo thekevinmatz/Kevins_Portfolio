@@ -2,7 +2,7 @@
 
 Welcome to my data analytics portfolio! Here you can find a selection of my projects and experiences in a variety of analyses, completed through my education and through various side projects. Feel free to reach out if you have any questions about my work!
 
-## About Me
+# About Me
 
 - 🔭 I just completed Master of Science in Economics
 - 🌱 I'm currently furthering my skills in SQL
@@ -163,12 +163,12 @@ Another project from my Masters degree, where me and a group of colleagues saugh
 More coming soon...
 
 
-## Education
+# Education
 
 - Master of Science in Economics, Texas A&M University, May 2023
 - Bachelor of Science in Economics, Texas A&M University, May 2023
 
-## Work Experience
+# Work Experience
 
 - Freelance Data Analyst, Online - Upwork, Since December 2022
   - Built data dashboards utilizing pivot tables, complex formulas, and a custom calculator to enable clients to convert 30,000+ live data points to a visually appealing sales team performance monitor
@@ -183,11 +183,11 @@ More coming soon...
   - Increased website sessions from search by 163% YoY through SEO techniques based on competitor data
 
 
-## Certifications
+# Certifications
 
 - Data Analysis with Python, Coursera, January 2023
 
-## Contact Me
+# Contact Me
 
 For any inquiries or collaborations, please feel free to reach me at:
 
