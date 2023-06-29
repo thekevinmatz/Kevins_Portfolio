@@ -30,7 +30,7 @@ I built this dashboard in Microsoft Excel, employing advanced functions such as 
 
 **Screenshot:**
 
-![JPG]((https://github.com/thekevinmatz/Kevins_Portfolio/blob/8e82ddb2fc59c6eee0c35c68d6f44827975811c8/Financial%20Dashboard%20Example%20Screenshot.png) "JPG")
+![JPG](https://github.com/thekevinmatz/Kevins_Portfolio/blob/8e82ddb2fc59c6eee0c35c68d6f44827975811c8/Financial%20Dashboard%20Example%20Screenshot.png "JPG")
 
 Key features of the dashboard include:
 
@@ -64,7 +64,7 @@ I built this dashboard in Microsoft Excel, employing advanced functions such as 
 
 **Screenshot:**
 
-![JPG]((https://github.com/thekevinmatz/Kevins_Portfolio/blob/8e82ddb2fc59c6eee0c35c68d6f44827975811c8/Financial%20Dashboard%20Example%20Screenshot.png) "JPG")
+![JPG](https://github.com/thekevinmatz/Kevins_Portfolio/blob/8e82ddb2fc59c6eee0c35c68d6f44827975811c8/Financial%20Dashboard%20Example%20Screenshot.png "JPG")
 
 Key features of the dashboard include:
 
