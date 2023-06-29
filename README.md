@@ -30,7 +30,7 @@ I built this dashboard in Microsoft Excel, employing advanced functions such as 
 
 **Screenshot:**
 
-![JPG](https://github.com/thekevinmatz/Kevins_Portfolio/blob/main/Screenshot%202023-06-27%20at%202.09.29%20PM.png "JPG")
+![JPG](Financial Dashboard Example Screen Shot.png "JPG")
 
 Key features of the dashboard include:
 
@@ -55,6 +55,34 @@ With this project, I have showcased my abilities in data analysis, problem-solvi
 ## Python Projects
 
 ## Excel and Google Sheets Projects
+
+### Dynamic Financial Dashboard - Excel | *COPY OF MOST RECENT PROJECT*
+
+As a freelance data analyst and Excel specialist, I recently had the opportunity to create a comprehensive trading dashboard for a client. The project, designed to track and analyze trading data, demonstrates my ability to utilize complex Excel formulas and tools to deliver effective business solutions.
+
+I built this dashboard in Microsoft Excel, employing advanced functions such as INDEX, OFFSET, COUNTA, VLOOKUP, SUMIF, and dynamic array formulas. The interface provides a user-friendly layout, making it easy for the client to input and monitor their trade data, while the back-end seamlessly handles complex calculations and data management tasks. 
+
+**Screenshot:**
+
+![JPG]( "JPG")
+
+Key features of the dashboard include:
+
+**Data recording and analysis:** The 'Trade Data Recording' tab allows users to input each trade's details, while the 'Trade Analysis' tab generates a dynamic display of the most recent 20 trades (or 'batches') based on the recorded data.
+
+**Real-time P&L tracking:** The dashboard provides a line chart that automatically updates to display the P&L of each trade. A running total of P&L is also calculated and charted to provide a clear overview of the trading performance over time.
+
+**Trading statistics:** The dashboard includes a variety of key trading statistics, including total number of trades, win rate, average win/loss, and expectancy, which are all updated in real-time.
+
+**Conditional formatting:** Visual cues were provided through the use of conditional formatting in order to enhance data clarity and user interaction.
+
+**Error handling:** I implemented error-handling functions to ensure that any blank cells or other potential data issues wouldn't disrupt the dashboard's performance.
+
+The provided screenshot is an example of the dashboard in use, with the numbers shown being purely illustrative. To protect my client's privacy, the data used are generated and not based on actual trading performance. Furthermore, the dashboard's design and features have been altered in certain ways to further secure confidential information.
+
+With this project, I have showcased my abilities in data analysis, problem-solving, and Excel mastery, all crucial skills for a data analyst role. I strive to combine these skills with my strong understanding of business operations to deliver solutions that enhance decision-making and improve performance.
+
+*Please note: For privacy and security reasons, the actual dashboard has not been shared. The screenshot provided is a altered copy and does not contain real data or sensitive information.*
 
 ## Statistical Analysis Presentations
 
