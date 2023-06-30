@@ -7,7 +7,7 @@ Welcome to my data analytics portfolio! Here you can find a selection of my proj
 - 🔭 I just completed Master of Science in Economics
 - 🌱 I'm currently furthering my skills in SQL
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/kevin-matz/) | [Email](mailto:kevinmatz@tamu.edu)
-- ⚡ Fun fact: I'm an avid musician and guitar player!
+- 💡 Fun fact: I'm an avid musician and guitar player!
 
 # Projects
 
