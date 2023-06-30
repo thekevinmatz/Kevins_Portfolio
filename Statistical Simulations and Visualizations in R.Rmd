@@ -1,5 +1,5 @@
 ---
-title: "Assignment #9"
+title: "Statistical Simulations and Visualizations in R"
 author: "Kevin Matz"
 date: "2023-03-05"
 output: word_document
@@ -13,7 +13,7 @@ library(ggplot2)
 library(dplyr)
 library(xts)
 ```
-**Question 1** 
+** 1** 
 ```{r}
 
 set.seed(123)
@@ -28,7 +28,7 @@ for (t in 2:100) {
 }
 
 ```
-**Question 2** 
+**Section 2** 
 ```{r}
 
 a <- rnorm(100)
@@ -42,7 +42,7 @@ for (t in 2:100) {
 
 ```
 
-**Question 3** 
+**Section 3** 
 ```{r}
 
 fit <- lm(Y ~ 1 + X)
@@ -56,7 +56,7 @@ t_stat <- b1 / summary(fit)$coef[2, 2]
 
 ```
 
-**Question 4** 
+**Section 4** 
 ```{r}
 
 # Re-run the algorithm from parts 1-3
@@ -92,7 +92,7 @@ cat("Reject null hypothesis:", reject_null, "\n")
 ```
 
 
-**Question 5** 
+**Section 5** 
 ```{r}
 
 reps <- 1000
@@ -139,7 +139,7 @@ The R2 and t-statistic distributions had percentiles of 5%, 50%, and 95%, with v
 In approximately 4.9% of the 1000 simulated data sets, the t-statistic exceeded the critical value of 1.96 in absolute value.
 
 
-**Question 6** 
+**Section 6** 
 ```{r}
 
 T_vec <- c(50, 100, 200)
@@ -176,12 +176,12 @@ abline(h = 0.05, col = "red")
 
 
 ```
-Yes, the fraction of times that the null hypothesis is rejected approaches 5% as the sample size increases, as expected due to the independence between Y and X.
+The fraction of times that the null hypothesis is rejected approaches 5% as the sample size increases, as expected due to the independence between Y and X.
 
 The fraction of times that the null hypothesis is rejected approaches a slightly lower limit than 5% as T gets larger. This lower limit reflects the persistence of the correlation between Y and X in the random walk processes.
 
 
-**Question 7** 
+**Section 7** 
 ```{r}
 
 T_vec <- c(50, 100, 200)
@@ -219,4 +219,4 @@ abline(h = 0.05, col = "red")
 
 
 ```
-The conclusions to questions 5 and 6 differ for the autoregressive processes compared to the random walk processes. Specifically, the convergence to the true value of the t-statistic is slower for the autoregressive processes than for the random walk processes. This slower convergence is due to the persistence of the correlation between Y and X in the autoregressive processes, which affects the independence assumption.
+The conclusions to Sections 5 and 6 differ for the autoregressive processes compared to the random walk processes. Specifically, the convergence to the true value of the t-statistic is slower for the autoregressive processes than for the random walk processes. This slower convergence is due to the persistence of the correlation between Y and X in the autoregressive processes, which affects the independence assumption.
