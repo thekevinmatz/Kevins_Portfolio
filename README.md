@@ -52,8 +52,6 @@ With this project, I have showcased my abilities in data analysis, problem-solvi
 
 ## R Projects
 
-## Python Projects
-
 ## Excel and Google Sheets Projects
 
 ### Dynamic Financial Dashboard - Excel | *COPY OF MOST RECENT PROJECT*
@@ -158,7 +156,7 @@ Another project from my Masters degree, where me and a group of colleagues saugh
 - Because the variable for a nation’s aging population (65<sub>it</sub>) is negative and statistically significant at a 95% confidence interval for all of our regressions, we fail to reject the null hypothesis that the change in the population of 65+ has a negative effect on GDP per-capita growth. 
 - We can conclude that, in the scope of our model, **as a developed country’s population ages, they can expect to see a decline in their GDP Per Capita growth rate moving forward.**
 
-
+## Python Projects
 
 More coming soon...
 
