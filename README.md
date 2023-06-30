@@ -14,10 +14,10 @@ Welcome to my data analytics portfolio! Here you can find a selection of my proj
 To help you navigate through my portfolio, I have organized my projects by the software used. Please feel free to click on the links below to jump directly to the section that interests you the most!
 
 - [Most Recent Project](#most-recent-project)
-- [Python Projects](#python-projects)
+- [R Projects](#r-projects)
 - [Excel and Google SheetsProjects](#excel-and-google-sheets-projects)
 - [Statistical Analysis Presentations](#statistical-analysis-presentations)
-- [R Projects](#r-projects)
+- [Python Projects](#python-projects)
 
 
 ## Most Recent Project
