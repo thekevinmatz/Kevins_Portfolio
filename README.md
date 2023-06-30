@@ -110,6 +110,44 @@ The results from these simulations provided insightful observations about the be
 
 The full R Markdown file for this project, containing all code and additional commentary, can be viewed [here](https://github.com/thekevinmatz/Kevins_Portfolio/blob/fa68eb46ffe69df29cb7ee4f526f2ae333488356/Statistical%20Simulations%20and%20Visualizations%20in%20R.Rmd)
 
+---
+
+### Statistical Analysis of Real GDP Growth and Interest Rate Spread
+
+This project was completed as part of my coursework and focuses on the statistical analysis of Real GDP growth and the Interest Rate Spread.
+
+**Project Description**
+
+The primary aim of this project was to analyze the relationship between Real GDP growth and the Interest Rate Spread. The data used in this project were retrieved from the Federal Reserve Economic Data (FRED) using the Quandl API.
+
+**Key Tasks**
+
+1. **Data Retrieval:** I retrieved and processed weekly data on the Interest Rate Spread from 1986 to 2022. I also fetched quarterly Real GDP data and computed the annualized growth rate.
+
+2. **Statistical Analysis:** Using R, I conducted autoregressive analyses on the Real GDP data with up to eight lags to ascertain the potential influence of past GDP growth rates on the current GDP growth rate.
+
+3. **Model Evaluation:** I evaluated the models based on their summary statistics and the Akaike Information Criterion (AIC). I noted potential endogeneity and the influence of uncorrelated factors that could affect the yield spread's predictability.
+
+4. **In-sample Fit:** I compared the fitted values from the best model against the actual realizations of the Real GDP growth, plotting them over time.
+
+5. **Forecasting:** I discussed the forecasting ability of the best model if it had been estimated about ten years ago. I also compared it against a forecast based on the sample mean and found a statistically significant difference between the two predictive methods.
+
+**Key Findings**
+
+The models, while not perfect, provided valuable insights into the relationships between the variables and allowed for reasonable forecasting. The best model leveraged the lag effect to accurately predict the next quarter, proving superior to a forecast based on the sample mean. However, the need for continuous improvement of forecasting methods to better account for the evolving nature of economic factors and the statistical nature of the data was highlighted.
+
+**Tools and Libraries Used**
+
+This project was completed using R with the following libraries:
+
+- `fredr` for retrieving data from FRED
+- `forecast` for conducting autoregressive analyses
+- `ggplot2` for data visualization
+- `xts` for handling time-series data
+- `Quandl` for data retrieval from Quandl
+
+The full code, along with more detailed findings from this project, can be found [here](https://github.com/thekevinmatz/Kevins_Portfolio/blob/2961d52474c4f8bad46ded2b19372dd7a917c1c0/Statistical%20Analysis%20of%20Real%20GDP%20Growth%20and%20Interest%20Rate%20Spread.Rmd).
+
 ## Excel and Google Sheets Projects
 
 ### Dynamic Financial Dashboard - Excel | *COPY OF MOST RECENT PROJECT*
