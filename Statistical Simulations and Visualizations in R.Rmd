@@ -1,0 +1,222 @@
+---
+title: "Assignment #9"
+author: "Kevin Matz"
+date: "2023-03-05"
+output: word_document
+---
+
+```{r load_libraries, include = T}
+library(fredr)
+library(forecast)
+library(dynlm)
+library(ggplot2)
+library(dplyr)
+library(xts)
+```
+**Question 1** 
+```{r}
+
+set.seed(123)
+
+e <- rnorm(100)
+
+Y <- numeric(100)
+Y[1] <- e[1]
+
+for (t in 2:100) {
+  Y[t] <- Y[t - 1] + e[t]
+}
+
+```
+**Question 2** 
+```{r}
+
+a <- rnorm(100)
+
+X <- numeric(100)
+X[1] <- a[1]
+
+for (t in 2:100) {
+  X[t] <- X[t - 1] + a[t]
+}
+
+```
+
+**Question 3** 
+```{r}
+
+fit <- lm(Y ~ 1 + X)
+
+b1 <- coef(fit)[2]
+
+R2 <- summary(fit)$r.squared
+
+t_stat <- b1 / summary(fit)$coef[2, 2]
+
+
+```
+
+**Question 4** 
+```{r}
+
+# Re-run the algorithm from parts 1-3
+set.seed(123)
+e <- rnorm(100)
+Y <- numeric(100)
+Y[1] <- e[1]
+for (t in 2:100) {
+  Y[t] <- Y[t - 1] + e[t]
+}
+a <- rnorm(100)
+X <- numeric(100)
+X[1] <- a[1]
+for (t in 2:100) {
+  X[t] <- X[t - 1] + a[t]
+}
+fit <- lm(Y ~ 1 + X)
+b1 <- coef(fit)[2]
+R2 <- summary(fit)$r.squared
+t_stat <- b1 / summary(fit)$coef[2, 2]
+
+# Test the null hypothesis that β1 = 0 using the usual 5% critical value of 1.96
+p_value <- 2 * pt(-abs(t_stat), df = 98)
+reject_null <- abs(t_stat) > 1.96
+
+# Print the results
+cat("R2:", round(R2, 3), "\n")
+cat("t-statistic:", round(t_stat, 3), "\n")
+cat("p-value:", p_value, "\n")
+cat("Reject null hypothesis:", reject_null, "\n")
+
+
+```
+
+
+**Question 5** 
+```{r}
+
+reps <- 1000
+
+R2_vec <- numeric(reps)
+t_stat_vec <- numeric(reps)
+
+for (i in 1:reps) {
+  e <- rnorm(100)
+  Y <- numeric(100)
+  Y[1] <- e[1]
+  for (t in 2:100) {
+    Y[t] <- Y[t - 1] + e[t]
+  }
+  a <- rnorm(100)
+  X <- numeric(100)
+  X[1] <- a[1]
+  for (t in 2:100) {
+    X[t] <- X[t - 1] + a[t]
+  }
+  fit <- lm(Y ~ 1 + X)
+  b1 <- coef(fit)[2]
+  R2_vec[i] <- summary(fit)$r.squared
+  t_stat_vec[i] <- b1 / summary(fit)$coef[2, 2]
+}
+
+par(mfrow = c(1, 2))
+hist(R2_vec, main = "Distribution of R2", xlab = "R2")
+hist(t_stat_vec, main = "Distribution of t-statistic", xlab = "t-statistic")
+
+R2_percentiles <- quantile(R2_vec, c(0.05, 0.5, 0.95))
+t_stat_percentiles <- quantile(t_stat_vec, c(0.05, 0.5, 0.95))
+
+cat("R2 percentiles:", R2_percentiles, "\n")
+cat("t-statistic percentiles:", t_stat_percentiles, "\n")
+
+fraction_reject_null <- mean(abs(t_stat_vec) > 1.96)
+cat("Fraction of simulations where the t-statistic exceeds 1.96 in absolute value:", fraction_reject_null, "\n")
+
+
+```
+The R2 and t-statistic distributions had percentiles of 5%, 50%, and 95%, with values of 0.008, 0.202, and 0.557 for R2, and -2.887, -0.222, and 2.835 for the t-statistic, respectively.
+
+In approximately 4.9% of the 1000 simulated data sets, the t-statistic exceeded the critical value of 1.96 in absolute value.
+
+
+**Question 6** 
+```{r}
+
+T_vec <- c(50, 100, 200)
+fraction_reject_null_vec <- numeric(length(T_vec))
+
+for (i in seq_along(T_vec)) {
+  T <- T_vec[i]
+  
+  reps <- 1000
+  t_stat_vec <- numeric(reps)
+  
+  for (j in 1:reps) {
+    e <- rnorm(T)
+    Y <- numeric(T)
+    Y[1] <- e[1]
+    for (t in 2:T) {
+      Y[t] <- Y[t - 1] + e[t]
+    }
+    a <- rnorm(T)
+    X <- numeric(T)
+    X[1] <- a[1]
+    for (t in 2:T) {
+      X[t] <- X[t - 1] + a[t]
+    }
+    fit <- lm(Y ~ 1 + X)
+    t_stat_vec[j] <- coef(summary(fit))[2, 3]
+  }
+  
+  fraction_reject_null_vec[i] <- mean(abs(t_stat_vec) > 1.96)
+}
+
+plot(T_vec, fraction_reject_null_vec, type = "b", xlab = "Sample size", ylab = "Fraction rejecting null")
+abline(h = 0.05, col = "red")
+
+
+```
+Yes, the fraction of times that the null hypothesis is rejected approaches 5% as the sample size increases, as expected due to the independence between Y and X.
+
+The fraction of times that the null hypothesis is rejected approaches a slightly lower limit than 5% as T gets larger. This lower limit reflects the persistence of the correlation between Y and X in the random walk processes.
+
+
+**Question 7** 
+```{r}
+
+T_vec <- c(50, 100, 200)
+fraction_reject_null_vec <- numeric(length(T_vec))
+
+for (i in seq_along(T_vec)) {
+  T <- T_vec[i]
+  
+  reps <- 1000
+  
+  t_stat_vec <- numeric(reps)
+  
+  for (j in 1:reps) {
+    e <- rnorm(T)
+    Y <- numeric(T)
+    Y[1] <- e[1]
+    for (t in 2:T) {
+      Y[t] <- 0.5 * Y[t - 1] + e[t]
+    }
+    a <- rnorm(T)
+    X <- numeric(T)
+    X[1] <- a[1]
+    for (t in 2:T) {
+      X[t] <- 0.5 * X[t - 1] + a[t]
+    }
+    fit <- lm(Y ~ 1 + X)
+    t_stat_vec[j] <- coef(summary(fit))[2, 3]
+  }
+  
+  fraction_reject_null_vec[i] <- mean(abs(t_stat_vec) > 1.96)
+}
+
+plot(T_vec, fraction_reject_null_vec, type = "b", xlab = "Sample size", ylab = "Fraction rejecting null")
+abline(h = 0.05, col = "red")
+
+
+```
+The conclusions to questions 5 and 6 differ for the autoregressive processes compared to the random walk processes. Specifically, the convergence to the true value of the t-statistic is slower for the autoregressive processes than for the random walk processes. This slower convergence is due to the persistence of the correlation between Y and X in the autoregressive processes, which affects the independence assumption.
