@@ -108,7 +108,7 @@ for (i in seq_along(T_vec)) {
 
 The results from these simulations provided insightful observations about the behavior of the t-statistics and R-squared values under different conditions. For example, the fraction of times that the null hypothesis is rejected was observed to approach 5% as the sample size increases, demonstrating the convergence of the t-test under these conditions. This project served as a practical exploration of statistical theory, and its results offered a valuable perspective on the behavior of key statistical metrics.
 
-The full R Markdown file for this project, containing all code and additional commentary, can be viewed
+The full R Markdown file for this project, containing all code and additional commentary, can be viewed [here.](https://github.com/thekevinmatz/Kevins_Portfolio/blob/fa68eb46ffe69df29cb7ee4f526f2ae333488356/Statistical%20Simulations%20and%20Visualizations%20in%20R.Rmd)
 
 ## Excel and Google Sheets Projects
 
