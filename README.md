@@ -52,6 +52,64 @@ With this project, I have showcased my abilities in data analysis, problem-solvi
 
 ## R Projects
 
+### Statistical Simulations and Visualizations in R
+
+In this project, I performed a series of statistical simulations using R to explore the behavior of t-statistics and R-squared values under different conditions. This work leveraged my understanding of statistical theory, particularly around the behavior of these metrics in the context of random walks and autoregressive processes.
+
+**Objective**
+
+The primary objective of this project was to gain insights into how certain statistical metrics behaved under various conditions. To achieve this, I used simulation techniques to generate data under specific conditions and then ran statistical analyses on this simulated data.
+
+**Methods**
+
+The project used several statistical simulation techniques. Firstly, I generated random walks and ran linear regressions on them. From these regressions, I extracted the t-statistics and R-squared values and analyzed their behavior. 
+
+For instance, I utilized the following R code to generate a random walk and then run a linear regression on it:
+
+```R
+set.seed(123)
+e <- rnorm(100)
+Y <- numeric(100)
+Y[1] <- e[1]
+for (t in 2:100) {
+  Y[t] <- Y[t - 1] + e[t]
+}
+fit <- lm(Y ~ 1 + X)
+b1 <- coef(fit)[2]
+R2 <- summary(fit)$r.squared
+t_stat <- b1 / summary(fit)$coef[2, 2]
+```
+
+After exploring the behavior of t-statistics and R-squared values in this basic setup, I conducted further simulations to assess their behavior under different sample sizes:
+
+```R
+T_vec <- c(50, 100, 200)
+fraction_reject_null_vec <- numeric(length(T_vec))
+
+for (i in seq_along(T_vec)) {
+  T <- T_vec[i]
+  reps <- 1000
+  t_stat_vec <- numeric(reps)
+  for (j in 1:reps) {
+    e <- rnorm(T)
+    Y <- numeric(T)
+    Y[1] <- e[1]
+    for (t in 2:T) {
+      Y[t] <- Y[t - 1] + e[t]
+    }
+    fit <- lm(Y ~ 1 + X)
+    t_stat_vec[j] <- coef(summary(fit))[2, 3]
+  }
+  fraction_reject_null_vec[i] <- mean(abs(t_stat_vec) > 1.96)
+}
+```
+
+**Results**
+
+The results from these simulations provided insightful observations about the behavior of the t-statistics and R-squared values under different conditions. For example, the fraction of times that the null hypothesis is rejected was observed to approach 5% as the sample size increases, demonstrating the convergence of the t-test under these conditions. This project served as a practical exploration of statistical theory, and its results offered a valuable perspective on the behavior of key statistical metrics.
+
+The full R Markdown file for this project, containing all code and additional commentary, can be viewed
+
 ## Excel and Google Sheets Projects
 
 ### Dynamic Financial Dashboard - Excel | *COPY OF MOST RECENT PROJECT*
