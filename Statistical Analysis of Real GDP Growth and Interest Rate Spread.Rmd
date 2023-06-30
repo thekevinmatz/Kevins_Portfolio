@@ -1,0 +1,114 @@
+---
+title: "Assignment #7"
+author: "Kevin Matz"
+date: "2023-10-04"
+output: word_document
+---
+
+```{r load_libraries, include = F}
+library(fredr)
+library(forecast)
+library(ggplot2)
+library(xts)
+library('Quandl')
+Quandl.api_key("ZNpxQL5ecVWXznuLkwRw")
+
+fredr_set_key("aafe53773faf9be07ccd09445e0f9b61")
+```
+
+```{r}
+#Question 1
+
+data_ts = Quandl(c('FRED/T10Y2Y'), collapse = 'weekly', start_date = "1986-01-05", end_date = "2022-10-10", type = "xts")
+plot(data_ts[, 1], main = "Interest Rate Spread", ylab = "Percent", xlab = "dates", type = "l" , col = "blue")
+```
+
+```{r}
+#Question 2
+
+data_import = fredr_series_observations(series_id = "GDPC1", frequency = "q")
+data = xts(x = data_import$value,order.by = data_import$date)
+
+y = na.exclude(400*diff(log(data)))
+y <- y[is.finite(y)]
+plot(y,main = "Real GDP", xlab = "Quarter", ylab = "Annualized Growth Rate, %",type = "l")
+
+reg_ts = lm(y~lag(y,1))
+summary(reg_ts)
+
+reg_ts_alt = ar.ols(y, aic = FALSE, 1,demean = FALSE, intercept = TRUE)
+reg_ts_alt
+
+reg_ts2 = lm(y~lag(y,2))
+summary(reg_ts2)
+reg_ts2_alt = ar.ols(y, aic = FALSE, 2,demean = FALSE, intercept = TRUE)
+reg_ts2_alt
+
+reg_ts3 = lm(y~lag(y,3))
+summary(reg_ts3)
+reg_ts3_alt = ar.ols(y, aic = FALSE, 3,demean = FALSE, intercept = TRUE)
+reg_ts3_alt
+
+reg_ts4 = lm(y~lag(y,4))
+summary(reg_ts4)
+reg_ts4_alt = ar.ols(y, aic = FALSE, 4,demean = FALSE, intercept = TRUE)
+reg_ts4_alt
+
+reg_ts5 = lm(y~lag(y,5))
+summary(reg_ts5)
+reg_ts5_alt = ar.ols(y, aic = FALSE, 5,demean = FALSE, intercept = TRUE)
+reg_ts5_alt
+
+reg_ts6 = lm(y~lag(y,6))
+summary(reg_ts6)
+reg_ts6_alt = ar.ols(y, aic = FALSE, 6,demean = FALSE, intercept = TRUE)
+reg_ts6_alt
+
+reg_ts7 = lm(y~lag(y,7))
+summary(reg_ts7)
+reg_ts7_alt = ar.ols(y, aic = FALSE, 7,demean = FALSE, intercept = TRUE)
+reg_ts7_alt
+
+reg_ts8 = lm(y~lag(y,8))
+summary(reg_ts8)
+reg_ts8_alt = ar.ols(y, aic = FALSE, 8,demean = FALSE, intercept = TRUE)
+reg_ts8_alt
+```
+
+#Question 3
+
+The output seen by the summary test show that there is an uncorrelated factor influencing the results, which could affect the overall predictability of the yield spread. The tests are also not very high in predictability of the percentage of yield spread that we are trying to measure. There is potential for endogeneity, and the best specification may provide useful insights butmay not be the most comprehensive model, as it may not account for all of the underlying factors that influence real GDP growth.
+
+
+
+#Question 4 ("Comment on the in-sample fit of the best specification. Plot the fitted values against the actual realizations of the real GDP growth.")
+```{r}
+y <- y[is.finite(y)]
+goil=diff(data_ts[,1])/lag(data_ts[,1],1)*100
+lgoil=100*diff(log(data_ts[,1]))
+lgoil <- lgoil[is.finite(lgoil)]
+
+best_model <- reg_ts_alt
+fitvalue <- fitted(best_model)
+
+fitvalue_xts <- xts(fitvalue, order.by=index(y))
+
+plot(lgoil,type='l',lty=2,main='In-sample Fit',ylab='percentage',xlab="dates",col="red")
+lines(fitvalue,col = "blue", lty =2)
+addLegend('topright',c('True','Fitted'),col=c("blue", "black"), lty=2:1, cex = 0.8)
+
+
+```
+
+The best fit of the in-sample tested, is a relatively good measure for trying to predict the spreads being observed and forecasts, but as stated in class this is not the best measure for these types of statistical analysis as it does not allow for the robust nature of the data to be accounted for.
+
+
+#Question 5 ("If you were to use the "best" model estimated roughly ten years ago, how well would it do in forecasting? How well would a sample mean forecast real GDP growth over the past ten years? Which forecast would be better on average? Is the difference between the predictive ability of the two predictions statistically significant?")
+
+Using the "best" model estimated about 10 years ago would provide reasonably accurate forecasting n for the past 10 yrs, because it would be able to take advantage of the lag effect that is present to accurately predict the next quarter. A sample mean would forecast real GDP growth relatively well on average depending on the volatility and variance of the data set. The "best" historical model would be better on average. Yes there is a statistical significance between the two predictive methods!
+
+#Question 6 ("Given the setup in the previous point, if you have to evaluate the models until the end of 2019, what would you say? Which forecast would be better, the one coming from the model with the term spread or the forecast based on the sample mean? Explain.")
+
+Considering the evaluation of the models up until the end of 2019, the model coming from the term spread would be the preferred choice. This is because the characteristics of this model allow for a more analogous and synergistic fit to the data, taking into account the existing relationships between the variables. Even though these methods are not the most ideal statistical methods, they still provide valuable insight. It is important to note that these methods do not account for the continually evolving and changing nature of the economic factors along with the statistical nature of the data. Thus, relying only on these models may not always product the most accurate forecasts at the end of the day, emphasizing the need for continuous improvement of forecasting methods.
+
+
