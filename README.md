@@ -15,7 +15,7 @@ To help you navigate through my portfolio, I have organized my projects by the s
 
 - [Most Recent Project](#most-recent-project)
 - [R Projects](#r-projects)
-- [Excel and Google SheetsProjects](#excel-and-google-sheets-projects)
+- [Excel and Google Sheets Projects](#excel-and-google-sheets-projects)
 - [Statistical Analysis Presentations](#statistical-analysis-presentations)
 - [Python Projects](#python-projects)
 
