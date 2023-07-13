@@ -264,22 +264,38 @@ More coming soon...
 
 # Work Experience
 
-- Freelance Data Analyst, Online - Upwork, Since December 2022
-  - Built data dashboards utilizing pivot tables, complex formulas, and a custom calculator to enable clients to convert 30,000+ live data points to a visually appealing sales team performance monitor
-  - Built a data tracking solution by implementing Excel formulas and macros to generate real-time, interactive graphs to monitor company growth and decrease visuals needed by 75%
-  - Performed comprehensive online research for a client, gathering 2,000+ data points to enhance sales targeting effectiveness
-  - Cleaned and restructured yearly survey data sets, resulting in a 10.4% reduction in errors and improved efficiency 
+Data Analyst | June 2023 – Present
+Michael Pagan (Contracted via Upwork) – Remote
+■	Engineered a comprehensive Excel-based trading dashboard incorporating 55 dynamic variables and 31 unique KPI’s for enhanced data tracking, providing a real-time overview of trading performance that automatically updates with new data 
+■	Employed formulas to segment each group of 20 trades as a distinct batch, in addition to the most recent 20 trades recorded
+■	Automated integrations for 1000+ new weekly data points, reducing calculation and interpretation times by nearly 81%
+■	Introduced 7 live time-series charts and graphs that offer at-a-glance insights into trends and patterns over time, catering to client’s need for quick decision-making on recently inputted data
+■	Ensured data integrity by standardizing variable formats with automatic formulas that output data in a requested format
 
-- Owner, VictoryFW, Since February 2021
-  - Direct online sportswear brand management, supervising all aspects tied to product sales and corresponding processes
-  - Analyzed consumer and competitor behavior leading to a switch from paid social media ads to influencer marketing, which began driving 55% of total sales thereafter 
-  - Researched and identified new product trends and categories to grow product offerings and business scale, resulting in a 27% YoY increase in web sales conversion rate
-  - Increased website sessions from search by 163% YoY through SEO techniques based on competitor data
+Data Analyst | December 2022 – June 2023
+Instrumentl (Contracted via Upwork) – Remote
+■	Designed data dashboards in Google Sheets utilizing pivot tables, complex formulas, and a custom calculator to enable clients to convert 30,000+ live data points to a visually appealing sales team performance monitor 
+■	Built a data tracking solution by implementing Excel formulas and macros to generate real-time, interactive graphs to monitor company growth and decrease visuals needed by 75%
+■	Developed predictive conversion calculators, improving capability to evaluate current and future sales team performance 
+■	Improved efficiency by reducing errors in yearly survey data sets by 10.4% through proper handling of missing data and standardizing variable formats, ensuring accurate and consistent analysis
+■	Presented methodology behind data analysis in a transparent and accessible manner, providing detailed explanations of statistical models, algorithms, and data sources used, fostering client trust and confidence in analytical processes
+
+Owner | February 2021 - June 2023
+VictoryFW - Houston, TX
+■	Direct online sportswear brand management, supervising all aspects tied to product sales and corresponding processes
+■	Analyzed consumer and competitor behavior leading to a switch from paid social media ads to influencer marketing, which began driving 55% of total sales thereafter 
+■	Researched and identified new product trends and categories to grow product offerings and business scale, resulting in a 27% YoY increase in web sales conversion rate
+■	Increased website sessions from search by 163% YoY through SEO techniques based on competitor data
 
 
 # Certifications
 
-- Data Analysis with Python, Coursera, January 2023
+Data Analyst Associate Certificate, Data Camp, July 2023		     	   
+■	Exhibited proficiency in data cleaning, visualization, and statistical analysis with R on a complex dataset in a practical exam
+■	Identified that 6% of claims had unusual handling times, suggesting an opportunity for process optimization
+
+Data Analysis with Python, Coursera, January 2023
+■	Mastered data manipulation and exploratory analysis, built a Scikit-Learn predictive model for predictive real estate pricing
 
 # Contact Me
 
