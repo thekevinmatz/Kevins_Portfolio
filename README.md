@@ -259,6 +259,7 @@ This project began in late March of 2023, when the NBA regular season was coming
 To assess the accuracy of my model, I decided to compare its predictions with the outcome probabilities inferred from sports books. As sports books are driven to provide the most accurate information to maintain credibility and customer engagement, their outcome probabilities are meticulously calculated using advanced models. Therefore, aligning closely with these probabilities would not only demonstrate the accuracy of my model but also its potential real-world applicability in the context of NBA game prediction.
 
 **Data Collection**
+
 Data is the lifeblood of any data analysis project. The first step of creating this game predictor was to collect relevant data, which in this case was the NBA season game data and associated statistics. This information was sourced from basketball-reference.com, a comprehensive and reliable database for NBA statistics.
 
 To retrieve the data, I leveraged Python's requests library to send HTTP requests and the BeautifulSoup library to parse the resulting HTML responses. The task was to navigate through the Document Object Model(DOM) structure of the web pages, identify the relevant tables containing the game data, and extract the necessary information. Here's a small glimpse into how this was achieved:
@@ -275,6 +276,7 @@ def scrape_nba_season_data(year):
 The above function runs through each month of the specified NBA season, fetching, parsing, and structuring the data in a way that's conducive to further analysis.
 
 **Data Processing**
+
 Once the data was collected, the next challenge was to process and organize it in a manner suitable for the predictive model. This involved cleaning the data (removing irrelevant columns, handling missing values, etc.), transforming it (converting data types, restructuring tables, etc.), and ultimately combining various statistical data into a comprehensive dataset.
 
 The advanced stats and per game stats, each initially residing in separate tables, were combined into a single DataFrame based on the team name. The snippet below illustrates this process:
@@ -287,6 +289,7 @@ combined_df = adv_stats_df.merge(per_game_stats_df, on="Team")
 ```
 
 **Prediction**
+
 The central component of the project is the prediction function, predict_winning_team(). This function ingests a date and uses the previously compiled dataset to generate predictions for the games scheduled on that date. The predictions are based on various factors, such as the team's win-loss record, strength of schedule, offensive and defensive ratings, and the advantage of playing at home.
 
 The function calculates a predicted score for each team playing in a game and then compares these scores to predict the winner. Here's a part of this function:
@@ -306,7 +309,9 @@ def predict_winning_team(date):
     predicted_winner = away_team if away_team_predicted_score > home_team_predicted_score else home_team
     ...
 ```
+
 **Findings**
+
 The predictive model built in this project correctly predicted the winner of each game **slightly more than 50% of the time.** While this might initially appear to be a successful outcome, a deeper examination reveals its limitations in a practical setting.
 
 Professional sports analysis services often identify "favorites" to win each game based on their comprehensive analyses. To outperform these services, a prediction model would need to consistently achieve a significantly higher accuracy rate. Additionally, in the context of sports betting, where **each team is not a 50/50 bet to win every game**, an accuracy rate of 50% would not lead to profitable outcomes due to the "overround" or "vigorish" applied by bookmakers.
@@ -315,6 +320,7 @@ Another crucial aspect to consider is the potential issue of endogeneity in the 
 
 
 **Conclusion**
+
 This project has been a valuable demonstration of Python's capabilities in processing and analyzing real-world data. It underscores my ability to carry out a data-driven project from inception to conclusion, highlighting skills such as web scraping, data cleaning, and predictive modeling.
 
 While the predictive model achieved an accuracy rate **slightly above 50%**, it highlighted the importance of considering all relevant variables and relationships to avoid issues such as endogeneity. The project served as a reminder that while models can be powerful tools for prediction, they must be carefully crafted with a thorough understanding of the data and the relationships within it.
