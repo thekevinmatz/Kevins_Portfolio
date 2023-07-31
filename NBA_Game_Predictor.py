@@ -88,7 +88,7 @@ per_game_stats_df.columns = headers
 # Save the DataFrames as CSV files
 per_game_stats_df.to_csv("per_game_stats.csv", index=False)
 
-#Sort each CSV file to only contain relevant variables
+# Sort each CSV file to only contain relevant variables
 # Keep the specified columns in the advanced stats DataFrame
 adv_stats_df = adv_stats_df[["Team", "W", "L", "SOS", "SRS", "ORtg", "DRtg", "NRtg", "Pace"]]
 
@@ -129,7 +129,7 @@ def predict_winning_team(date):
         # print("Away team data:\n", away_team_stats)
 
         # Calculate score predictions for each team
-        #Home Court Advantage Multiplier:
+        # Home Court Advantage Multiplier:
         HCA = 1.03
 
         away_team_predicted_score = (1 + (float(away_team_stats["SOS"])/100))*( ( ( math.log( ( away_team_stats["W"] / ( away_team_stats["L"] + away_team_stats["W"] ) ) / (.5) ) ) * (.1) ) + 1 ) * (float(away_team_stats["PTS"]) * (float(home_team_stats["DRtg"]) / float(away_team_stats["ORtg"])))
