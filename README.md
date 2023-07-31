@@ -250,7 +250,80 @@ Another project from my Masters degree, where me and a group of colleagues saugh
 
 ## Python Projects
 
-More coming soon...
+### NBA Game Predictor
+
+This project is more of a personal project, and a result of my interest in both sports and my drive to refine my Python programming skills. It has given me the opportunity to immerse myself in the dynamic domain of sports analytics, where basketball meets the precision of data analysis, while giving me experience in web scraping through Python.
+
+This project began in late March of 2023, when the NBA regular season was coming to a close. I chose to begin this project in March, as around 90% of NBA regular season games would have already been played in the 2022-2023 season. This gave me access to a more accurate representation of 2022-2023 regular season data, while having games to spare so that I could most effectively predict the outcomes of those games. 
+
+To assess the accuracy of my model, I decided to compare its predictions with the outcome probabilities inferred from sports books. As sports books are driven to provide the most accurate information to maintain credibility and customer engagement, their outcome probabilities are meticulously calculated using advanced models. Therefore, aligning closely with these probabilities would not only demonstrate the accuracy of my model but also its potential real-world applicability in the context of NBA game prediction.
+
+**Data Collection**
+Data is the lifeblood of any data analysis project. The first step of creating this game predictor was to collect relevant data, which in this case was the NBA season game data and associated statistics. This information was sourced from basketball-reference.com, a comprehensive and reliable database for NBA statistics.
+
+To retrieve the data, I leveraged Python's requests library to send HTTP requests and the BeautifulSoup library to parse the resulting HTML responses. The task was to navigate through the Document Object Model(DOM) structure of the web pages, identify the relevant tables containing the game data, and extract the necessary information. Here's a small glimpse into how this was achieved:
+
+```python
+def scrape_nba_season_data(year):
+    ...
+    # Send HTTP request and parse the response
+    url = f"https://www.basketball-reference.com/leagues/NBA_{year}_games-{month}.html"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    ...
+```
+The above function runs through each month of the specified NBA season, fetching, parsing, and structuring the data in a way that's conducive to further analysis.
+
+**Data Processing**
+Once the data was collected, the next challenge was to process and organize it in a manner suitable for the predictive model. This involved cleaning the data (removing irrelevant columns, handling missing values, etc.), transforming it (converting data types, restructuring tables, etc.), and ultimately combining various statistical data into a comprehensive dataset.
+
+The advanced stats and per game stats, each initially residing in separate tables, were combined into a single DataFrame based on the team name. The snippet below illustrates this process:
+
+```python
+# Keep the specified columns and merge the DataFrames
+adv_stats_df = adv_stats_df[["Team", "W", "L", "SOS", "SRS", "ORtg", "DRtg", "NRtg", "Pace"]]
+per_game_stats_df = per_game_stats_df[["Team", "G", "PTS"]]
+combined_df = adv_stats_df.merge(per_game_stats_df, on="Team")
+```
+
+**Prediction**
+The central component of the project is the prediction function, predict_winning_team(). This function ingests a date and uses the previously compiled dataset to generate predictions for the games scheduled on that date. The predictions are based on various factors, such as the team's win-loss record, strength of schedule, offensive and defensive ratings, and the advantage of playing at home.
+
+The function calculates a predicted score for each team playing in a game and then compares these scores to predict the winner. Here's a part of this function:
+
+```python
+def predict_winning_team(date):
+    ...
+    # Get the team stats from the combined_stats DataFrame
+    away_team_stats = combined_stats[combined_stats["Team"] == away_team].iloc[0]
+    home_team_stats = combined_stats[combined_stats["Team"] == home_team].iloc[0]
+    
+    # Calculate score predictions for each team
+    away_team_predicted_score = # calculation formula here
+    home_team_predicted_score = # calculation formula here
+
+    # Compare the predicted scores and determine the winning team
+    predicted_winner = away_team if away_team_predicted_score > home_team_predicted_score else home_team
+    ...
+```
+**Findings**
+The predictive model built in this project correctly predicted the winner of each game **slightly more than 50% of the time.** While this might initially appear to be a successful outcome, a deeper examination reveals its limitations in a practical setting.
+
+Professional sports analysis services often identify "favorites" to win each game based on their comprehensive analyses. To outperform these services, a prediction model would need to consistently achieve a significantly higher accuracy rate. Additionally, in the context of sports betting, where **each team is not a 50/50 bet to win every game**, an accuracy rate of 50% would not lead to profitable outcomes due to the "overround" or "vigorish" applied by bookmakers.
+
+Another crucial aspect to consider is the potential issue of endogeneity in the model. The model may be overlooking important variables or not accounting for simultaneous relationships between variables, which could introduce bias into the predictions. For example, the model does not consider variables like player injuries, recent performance trends, or head-to-head records, which could have a significant impact on game outcomes.
+
+
+**Conclusion**
+This project has been a valuable demonstration of Python's capabilities in processing and analyzing real-world data. It underscores my ability to carry out a data-driven project from inception to conclusion, highlighting skills such as web scraping, data cleaning, and predictive modeling.
+
+While the predictive model achieved an accuracy rate **slightly above 50%**, it highlighted the importance of considering all relevant variables and relationships to avoid issues such as endogeneity. The project served as a reminder that while models can be powerful tools for prediction, they must be carefully crafted with a thorough understanding of the data and the relationships within it.
+
+The model, as it currently stands, is a stepping stone towards building a more comprehensive and accurate predictor of NBA games. By incorporating more features and possibly using machine learning techniques, there's potential for significant improvement in prediction accuracy.
+
+In summary, this project served as a great learning experience, affirming the challenges and complexities inherent in data analysis. It has sparked avenues for further exploration in sports analytics, and I am excited to continue refining the model to provide even more accurate predictions in the future.
+
+For a more detailed view, please refer to the [complete Python script](https://github.com/thekevinmatz/Kevins_Portfolio/blob/747419f21d4c5ab79d8071beeab9c5d4757ae5b7/NBA_Game_Predictor.py) of the project.
 
 
 # Education
