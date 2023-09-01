@@ -339,22 +339,16 @@ For a more detailed view, please refer to the [complete Python script](https://g
 
 # Work Experience
 
-Data Analyst | Michael Pagan (Contracted via Upwork) – Remote | June 2023 – Present
+Data Analyst | Freelance – Remote | December 2022 – Present
 
--	Engineered a comprehensive Excel-based trading dashboard incorporating 55 dynamic variables and 31 unique KPI’s for enhanced data tracking, providing a real-time overview of trading performance that automatically updates with new data
--	Employed formulas to segment each group of 20 trades as a distinct batch, in addition to the most recent 20 trades recorded
+-	Engineered a comprehensive Excel-based trading dashboard incorporating 55 dynamic variables and 31 unique KPI’s for enhanced data tracking, providing a real-time overview of trading performance that automatically updates with new data 
 -	Automated integrations for 1000+ new weekly data points, reducing calculation and interpretation times by nearly 81%
--	Introduced 7 live time-series charts and graphs that offer at-a-glance insights into trends and patterns over time, catering to client’s need for quick decision-making on recently inputted data
--	Ensured data integrity by standardizing variable formats with automatic formulas that output data in a requested format
-
-
-Data Analyst | Instrumentl (Contracted via Upwork) – Remote | December 2022 – June 2023
-
-- Designed data dashboards in Google Sheets utilizing pivot tables, complex formulas, and a custom calculator to enable clients to convert 30,000+ live data points to a visually appealing sales team performance monitor
-- Built a data tracking solution by implementing Excel formulas and macros to generate real-time, interactive graphs to monitor company growth and decrease visuals needed by 75%
-- Developed predictive conversion calculators, improving capability to evaluate current and future sales team performance
-- Improved efficiency by reducing errors in yearly survey data sets by 10.4% through proper handling of missing data and standardizing variable formats, ensuring accurate and consistent analysis
-- Presented methodology behind data analysis in a transparent and accessible manner, providing detailed explanations of statistical models, algorithms, and data sources used, fostering client trust and confidence in analytical processes
+-	Introduced 7 live time-series charts and graphs that offer at-a-glance insights into trends and patterns over time, catering to a client’s need for quick decision-making on recently inputted data
+-	Designed data dashboards in Google Sheets utilizing pivot tables, complex formulas, and a custom calculator to enable clients to convert 30,000+ live data points to a visually appealing sales team performance monitor for a client
+-	Built a data tracking solution by implementing Excel formulas and macros to generate real-time, interactive graphs to monitor company growth and decrease visuals needed by 75%
+-	Developed predictive conversion calculators, improving capability to evaluate current and future sales team performance 
+-	Improved data efficiency by reducing errors in yearly survey data sets by 10.4% through proper handling of missing data and standardizing variable formats, ensuring accurate and consistent analysis
+-	Presented methodology behind data analysis in a transparent and accessible manner, providing detailed explanations of statistical models, algorithms, and data sources used, fostering client trust and confidence in analytical methods
 
 
 Owner | VictoryFW - Houston, TX | February 2021 - June 2023 
